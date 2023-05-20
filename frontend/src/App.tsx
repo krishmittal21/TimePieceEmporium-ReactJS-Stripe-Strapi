@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import headerImage from './img/header.jpg';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={headerImage} alt="Header" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
