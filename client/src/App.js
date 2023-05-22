@@ -4,6 +4,7 @@ import Home from "./scenes/home/Home";
 import ItemDetails from "./scenes/itemDetails/ItemDetails";
 import Checkout from "./scenes/checkout/Checkout";
 import Confirmation from "./scenes/confirmation/Confirmation";
+import Navbar from "./scenes/navbar/NavBar.jsx";
 const ScrollToTop = () => {
   const {pathname} = useLocation();
   useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
+      <Navbar />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home/>} />
