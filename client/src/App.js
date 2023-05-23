@@ -4,7 +4,7 @@ import Home from "./scenes/home/Home";
 import ItemDetails from "./scenes/itemDetails/ItemDetails";
 import Checkout from "./scenes/checkout/Checkout";
 import Confirmation from "./scenes/checkout/Confirmation";
-import Navbar from "./scenes/navbar/NavBar.jsx";
+import Navbar from "./scenes/global/NavBar.jsx";
 const ScrollToTop = () => {
   const {pathname} = useLocation();
   useEffect(() => {
