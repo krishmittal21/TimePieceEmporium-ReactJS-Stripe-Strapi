@@ -1,7 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import {Badge, Box, IconButton, Menu, MenuItem} from "@mui/material";
 import{
-    PersonOutline,
+    PersonOutlined,
     ShoppingBagOutlined,
     MenuOutlined,
     HomeOutlined,

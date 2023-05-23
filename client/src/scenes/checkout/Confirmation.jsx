@@ -1,7 +1,7 @@
 const Confirmation = () => {
     return (
         <div>
-            <h1>Confirmation</h1>
+            Confirmation
         </div>
     )
 }
