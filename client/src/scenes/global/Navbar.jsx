@@ -39,7 +39,7 @@ const NavBar = () => {
                 sx={{'&:hover': {cursor: 'pointer'}}}
                 color={shades.secondary[500]}
             >
-                TimePieceTracker
+                TimePieceEmporium
             </Box>
             <Box
                 display="flex"
