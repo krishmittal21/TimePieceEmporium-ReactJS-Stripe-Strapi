@@ -54,9 +54,40 @@ const Item =({item,width})=>{
                             backgroundColor={shades.neutral[100]}
                             borderRadius="3px"
                         >
+                                <IconButton
+                            onClick={() =>
+                                setCount(Math.max( count - 1,1))
+                            }
+                            >
+                            <RemoveIcon />
+                            </IconButton>
+                            <Typography color={shades.primary[300]}>{count}</Typography>
+                            <IconButton
+                            onClick={() =>
+                                setCount(Math.max( count + 1))
+                            }
+                            >
+                            <AddIcon />
+                            </IconButton>
                         </Box>
+                        {/* button*/ }
+                        <Button
+                            onClick={()=>{dispatch(addToCart({item:{...item,count}}));}}
+                            sx={{backgroundColor:shades.primary[300],color:"white"}}
+                        >
+                        </Button>
                     </Box>
                 </Box>
+            </Box>
+            <Box
+                mt="3px"
+            >
+                <Typography variant="subtitile2" color={neutral.dark}>
+                    {category.replace(/([A-Z])/g,"$1")
+                    .replace(/^./,str=>str.toUpperCase())}
+                </Typography>
+                <Typography>{name}</Typography>
+                <Typography fontWeight="bold">${price}</Typography>
             </Box>
         </Box>
     )
