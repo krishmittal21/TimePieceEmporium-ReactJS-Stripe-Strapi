@@ -54,7 +54,6 @@ const Item =({item,width})=>{
                             backgroundColor={shades.neutral[100]}
                             borderRadius="3px"
                         >
-
                         </Box>
                     </Box>
                 </Box>
