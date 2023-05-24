@@ -24,7 +24,7 @@
         showThumbs={false}
         showIndicators={false}
         showStatus={false}
-        renderArrowPrev={(onClickHandler, hasPrev, label) => (
+        renderArrowPrev={(onClickHandler) => (
             <IconButton
             onClick={onClickHandler}
             sx={{
@@ -39,7 +39,7 @@
             <NavigateBeforeIcon sx={{ fontSize: 40 }} />
             </IconButton>
         )}
-        renderArrowNext={(onClickHandler, hasNext, label) => (
+        renderArrowNext={(onClickHandler) => (
             <IconButton
             onClick={onClickHandler}
             sx={{
