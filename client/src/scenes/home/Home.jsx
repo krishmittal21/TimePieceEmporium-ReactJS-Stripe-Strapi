@@ -1,7 +1,9 @@
+import React from 'react'
+import MainCarousel from "./MainCarousel"
 const Home = () => {
     return (
-        <div>
-            Home
+        <div className='home'>
+            <MainCarousel />
         </div>
     )
 }
